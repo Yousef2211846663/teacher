@@ -71,7 +71,7 @@
                                     الطلاب
                                 </p>
                             </a>
-                            
+
 
                         </li>
 
@@ -79,6 +79,29 @@
                 </li>
 
 
+<li class="nav-item">
+    <a href="#" class="nav-link">
+        <i class="nav-icon fas fa-chalkboard-teacher"></i>
+        <p>
+            ادارة المعلمين
+            <i class="right fas fa-angle-left"></i>
+        </p>
+    </a>
+    <ul class="nav nav-treeview" style="display: none;">
+        <li class="nav-item">
+            <a href="{{ route('teachers.index') }}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>عرض المعلمين</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="{{ route('teachers.create') }}" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>اضافة معلم</p>
+            </a>
+        </li>
+    </ul>
+</li>
 
 
 
