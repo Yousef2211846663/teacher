@@ -7,6 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Subject extends Model
 {
-    /** @use HasFactory<\Database\Factories\SubjectFactory> */
+
+     
+    /** @use HasFactory?\Database\Factories\SubjectFactory? */
     use HasFactory;
+    protected $fillable = [
+        'name',
+        'code',
+        'semester',
+        'description',
+    ];
+    
+
 }

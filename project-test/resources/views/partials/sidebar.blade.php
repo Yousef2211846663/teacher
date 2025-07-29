@@ -52,7 +52,7 @@
                     <a href="" class="nav-link ">
                         <i class="nav-icon fas fa-user-graduate"></i>
                         <p>
-                            ادارة الطلبة
+                            ادارة المواد 
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -61,14 +61,14 @@
                             <a href="{{ route('subjects.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>
-                                    عرض الطلاب
+                                    عرض المواد 
                                 </p>
                             </a>
                             <a href="{{ route('subjects.create') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>
                                     اضافة
-                                    الطلاب
+                                    مادة
                                 </p>
                             </a>
                             
