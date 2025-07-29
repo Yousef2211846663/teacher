@@ -14,6 +14,7 @@
     <div class="flex grow flex-col in-data-kt-[sticky-header=on]:pt-(--header-height)" >
 
     <div >
+        {{-- Header --}}
             @include('partials.header')
     </div>
     <div >
@@ -23,7 +24,7 @@
     
     <div class="container-fixed w-full flex px-0 lg:ps-4">
 
-        <div class="w-(--sidebar-width) shrink-0 hidden lg:flex items-start [--kt-drawer-enable:true] lg:[--kt-drawer-enable:false]" data-kt-drawer="true" data-kt-drawer-class="kt-drawer kt-drawer-start flex top-0 bottom-0" id="sidebar" >
+        <div  >
             {{-- Sidebar --}}
         @include('partials.sidebar')
         </div>
