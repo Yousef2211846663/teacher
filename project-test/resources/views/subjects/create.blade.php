@@ -20,7 +20,7 @@
                     <h3 class="card-title">نموذج إضافة مادة</h3>
                 </div>
 
-                <form action="{{route('subjects.store')}}" method="POST">
+                <form action="" method="POST">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
@@ -34,15 +34,27 @@
                         </div>
 
                         <div class="form-group">
-                            <label>السمستر</label>
-                            <input type="text" name="semester" class="form-control" required />
+                            <label>السنة</label>
+                            <input type="number" name="year" class="form-control" required />
                         </div>
 
-                        
+                        <div class="form-group">
+                            <label>الفصل</label>
+                            <select name="semester" class="form-control" required>
+                                <option value="الأول">الأول</option>
+                                <option value="الثاني">الثاني</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>القسم</label>
+                            <input type="text" name="department" class="form-control" required />
+                        </div>
+                    </div>
 
                     <div class="card-footer text-center">
                         <button type="submit" class="btn btn-primary">حفظ</button>
-                        <a href="{{route("subjects.index")}}" class="btn btn-secondary">إلغاء</a>
+                        <a href="" class="btn btn-secondary">إلغاء</a>
                     </div>
                 </form>
             </div>
